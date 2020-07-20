@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="73ca9f2d-24b2-463a-95b6-76134f014694">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     cengkaruk_watu.`no` AS cengkaruk_watu_no,
+     cengkaruk_watu.`nama` AS cengkaruk_watu_nama,
+     cengkaruk_watu.`rt_rw` AS cengkaruk_watu_rt_rw,
+     cengkaruk_watu.`status_pendidikan` AS cengkaruk_watu_status_pendidikan,
+     cengkaruk_watu.`tahun_lulus` AS cengkaruk_watu_tahun_lulus,
+     cengkaruk_watu.`pekerjaan` AS cengkaruk_watu_pekerjaan,
+     cengkaruk_watu.`nama_lembaga_pendidikan` AS cengkaruk_watu_nama_lembaga_pendidikan,
+     cengkaruk_watu.`jurusan` AS cengkaruk_watu_jurusan,
+     cengkaruk_watu.`telepon` AS cengkaruk_watu_telepon
+FROM
+     `cengkaruk_watu` cengkaruk_watu]]>
+	</queryString>
+	<field name="cengkaruk_watu_no" class="java.lang.Integer"/>
+	<field name="cengkaruk_watu_nama" class="java.lang.String"/>
+	<field name="cengkaruk_watu_rt_rw" class="java.lang.Integer"/>
+	<field name="cengkaruk_watu_status_pendidikan" class="java.lang.String"/>
+	<field name="cengkaruk_watu_tahun_lulus" class="java.lang.Integer"/>
+	<field name="cengkaruk_watu_pekerjaan" class="java.lang.String"/>
+	<field name="cengkaruk_watu_nama_lembaga_pendidikan" class="java.lang.String"/>
+	<field name="cengkaruk_watu_jurusan" class="java.lang.String"/>
+	<field name="cengkaruk_watu_telepon" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="183" y="11" width="454" height="31" uuid="7d5e343b-4a76-465b-9d8b-7b59d63ad08b"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[DATA SARJANA DAN CALON SARJANA ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="51" splitType="Stretch">
+			<line>
+				<reportElement x="53" y="31" width="717" height="1" uuid="b1091495-46b9-49f8-9b54-a280659507fb"/>
+			</line>
+			<staticText>
+				<reportElement x="195" y="0" width="424" height="21" uuid="0cd75c5f-ed5c-477e-a630-15b64cf8b1a5"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dusun Cengkaruk Watu, Desa Capang - Purwodadi]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<rectangle>
+				<reportElement x="662" y="15" width="111" height="20" uuid="ff185d96-7ec2-465f-acf6-d41dcb4f9f65"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="562" y="15" width="100" height="20" uuid="594266eb-ef6f-4ce1-9e79-f9562fb1c449"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="462" y="15" width="100" height="20" uuid="fe3ce424-9db1-4a3e-87c8-c8d96cd03eab"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="372" y="15" width="90" height="20" uuid="417b7c82-f417-40a3-87fa-c9eaed5f3834"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="307" y="15" width="65" height="20" uuid="de73802e-7825-4a02-b97d-3f2540eed7eb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="238" y="15" width="69" height="20" uuid="495ad8d5-a1b0-4dc5-8393-e61508966fbd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="184" y="15" width="54" height="20" uuid="38848d1b-fb61-4b0b-8724-319fe66048f8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="53" y="15" width="131" height="20" uuid="b12344ed-b1aa-4194-816f-deb7c161887d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="18" y="15" width="35" height="20" uuid="116ab8ef-e767-4a46-be60-caadb4551710"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="19" y="16" width="34" height="20" uuid="21fb96f1-0e4d-4768-83e7-e287712d4fba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="16" width="130" height="20" uuid="76ca5d88-c1fe-43e0-ad6d-9d9dd4818bad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="16" width="55" height="20" uuid="5b08fae1-15d5-4700-b49b-19666a8289f7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[RT/RW]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="238" y="15" width="69" height="20" uuid="45c62fb4-b442-4702-9bd9-5a9122be6580"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status Pendidikan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="16" width="65" height="20" uuid="1bdf0901-441b-42fa-8776-ec539cf71018"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tahun Lulus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="16" width="90" height="20" uuid="d45ad23d-90d9-44f9-9fd9-71db94c6847d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pekerjaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="462" y="16" width="100" height="20" uuid="f1f4458e-e3db-4af9-b2fb-d263a06dd6a4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Lembaga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="562" y="15" width="100" height="20" uuid="4d871ba7-09ee-4ace-8765-15e95324d339"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jurusan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="662" y="15" width="111" height="20" uuid="b7aff0e6-133a-43a9-b40c-8dd4c0f689b7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telepon]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="72" splitType="Stretch">
+			<rectangle>
+				<reportElement x="662" y="0" width="111" height="20" uuid="1ba93f33-4784-4498-b10e-7a60418c0744"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="562" y="0" width="100" height="20" uuid="19b9d3b1-cafe-414a-869d-640452471840"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="462" y="0" width="100" height="20" uuid="201b6bf5-1dda-4072-9bc5-177b98fa675c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="372" y="0" width="90" height="20" uuid="fabce5e8-1b58-46e9-b921-844f40da9a18"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="307" y="0" width="65" height="20" uuid="1bf49421-046d-494b-a5cf-21d34a6c954a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="238" y="0" width="69" height="20" uuid="b7e9caed-ca17-4cf9-8fb2-9e4c5d32ddc2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="184" y="0" width="54" height="20" uuid="3a58acef-1efe-48cf-9b28-971e6f823bd6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="53" y="0" width="131" height="20" uuid="0d76c3e4-03b9-48d6-902a-b7da47f8fe20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="18" y="0" width="35" height="20" uuid="d07923f4-7467-438a-8cdd-2e7a65dcaba0"/>
+			</rectangle>
+			<textField>
+				<reportElement x="18" y="0" width="35" height="20" uuid="c7fdb84e-17ae-4a0c-a13b-36849abad2c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cengkaruk_watu_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="53" y="0" width="130" height="20" uuid="f24d6fc6-6073-454f-9dd4-d91fe1650595"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cengkaruk_watu_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="0" width="55" height="20" uuid="f0207775-2964-4a92-90e0-0f8b3dc6b8e0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cengkaruk_watu_rt_rw}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="0" width="65" height="20" uuid="450ee4a2-836a-45ae-ad16-1d32116e57fe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cengkaruk_watu_tahun_lulus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="372" y="0" width="100" height="20" uuid="88d2e251-2e0c-4c5d-9b72-e5f27332b37f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cengkaruk_watu_pekerjaan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="238" y="0" width="69" height="20" uuid="d193cd06-9b04-427f-9625-dde453b1bc5f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cengkaruk_watu_status_pendidikan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="462" y="0" width="100" height="20" uuid="70298d2b-a3fd-43bb-8b47-402dfa162225"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cengkaruk_watu_nama_lembaga_pendidikan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="562" y="0" width="100" height="20" uuid="cb2f75e8-2e6b-4faa-a38f-0c1153ac41be"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cengkaruk_watu_jurusan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="662" y="0" width="111" height="20" uuid="118d8f8e-947f-40c6-8123-fe9eab2655f2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cengkaruk_watu_telepon}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

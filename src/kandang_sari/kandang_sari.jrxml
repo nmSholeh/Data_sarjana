@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="40c4d9da-f471-41ba-96c8-32be773fb276">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     kandang_sari.`no` AS kandang_sari_no,
+     kandang_sari.`nama` AS kandang_sari_nama,
+     kandang_sari.`rt_rw` AS kandang_sari_rt_rw,
+     kandang_sari.`status_pendidikan` AS kandang_sari_status_pendidikan,
+     kandang_sari.`tahun_lulus` AS kandang_sari_tahun_lulus,
+     kandang_sari.`pekerjaan` AS kandang_sari_pekerjaan,
+     kandang_sari.`nama_lembaga_pendidikan` AS kandang_sari_nama_lembaga_pendidikan,
+     kandang_sari.`jurusan` AS kandang_sari_jurusan,
+     kandang_sari.`telepon` AS kandang_sari_telepon
+FROM
+     `kandang_sari` kandang_sari]]>
+	</queryString>
+	<field name="kandang_sari_no" class="java.lang.Integer"/>
+	<field name="kandang_sari_nama" class="java.lang.String"/>
+	<field name="kandang_sari_rt_rw" class="java.lang.String"/>
+	<field name="kandang_sari_status_pendidikan" class="java.lang.String"/>
+	<field name="kandang_sari_tahun_lulus" class="java.lang.Integer"/>
+	<field name="kandang_sari_pekerjaan" class="java.lang.String"/>
+	<field name="kandang_sari_nama_lembaga_pendidikan" class="java.lang.String"/>
+	<field name="kandang_sari_jurusan" class="java.lang.String"/>
+	<field name="kandang_sari_telepon" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="190" y="0" width="454" height="31" uuid="9bb741ff-0427-4d33-984f-d0a90a573154"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[DATA SARJANA DAN CALON SARJANA ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="0" width="424" height="21" uuid="a8ffe433-9a68-4921-88be-9475e1a327e1"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dusun Kandang Sari, Desa Capang - Purwodadi]]></text>
+			</staticText>
+			<line>
+				<reportElement x="46" y="21" width="717" height="1" uuid="6b290c5c-e3da-4dcb-8b7b-6a3283f37a25"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="38" splitType="Stretch">
+			<rectangle>
+				<reportElement x="665" y="18" width="111" height="20" uuid="4ccaca91-8e3d-4547-89f8-918615dbbe06"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="565" y="18" width="100" height="20" uuid="edebcc1f-5327-4951-b531-a47e0f23c43f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="465" y="18" width="100" height="20" uuid="1ef930ac-fe13-4622-8a8e-a65505a7ee64"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="375" y="18" width="90" height="20" uuid="aede8ecd-0942-4478-b1de-615ae6a1bcb1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="310" y="18" width="65" height="20" uuid="b4b70ffd-bd13-422e-b4f5-05cad2230034"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="241" y="18" width="69" height="20" uuid="e99ddfc0-cfee-4d40-b108-988b28f66bf2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="187" y="18" width="54" height="20" uuid="f043ea8c-7826-40c7-aca7-faafba1a0f81"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="56" y="18" width="131" height="20" uuid="1417c82c-b2aa-4bb4-b6eb-f2e4c4f589e7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="21" y="18" width="35" height="20" uuid="c9de66d3-4135-4773-b716-3555376e021e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="21" y="18" width="35" height="20" uuid="a1b1f499-8aca-41e9-8be9-0370acaf5dac"/>
+				<text><![CDATA[No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="18" width="131" height="20" uuid="83fd7079-6d2e-4d59-b343-898a2d49d713"/>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="18" width="51" height="20" uuid="bb4838c0-758b-40e9-862e-d7d634c5e992"/>
+				<text><![CDATA[RT/RW]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="18" width="69" height="20" uuid="8a6b3f9c-8f82-4d56-af9f-6fc2e45593b5"/>
+				<text><![CDATA[Status Pendidikan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="312" y="18" width="63" height="20" uuid="2e1f8ed5-7f93-41c6-941d-607142e5c882"/>
+				<text><![CDATA[Tahun Lulus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="375" y="18" width="90" height="20" uuid="cb3a7583-382f-4ac4-bdd1-9edc94c893be"/>
+				<text><![CDATA[Pekerjaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="18" width="100" height="20" uuid="9f0878db-140e-4f50-93aa-eb804c09e835"/>
+				<text><![CDATA[Nama Lembaga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="565" y="18" width="100" height="20" uuid="0ae2c450-a7f7-4550-b0b8-fa96687fe94d"/>
+				<text><![CDATA[Jurusan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="665" y="18" width="111" height="20" uuid="2bee8d02-45ef-4bda-bc02-b4035ee2999d"/>
+				<text><![CDATA[Telepon]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="70" splitType="Stretch">
+			<rectangle>
+				<reportElement x="665" y="0" width="111" height="20" uuid="db5e9b09-3b8f-44e6-9182-53ac228e4230"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="565" y="0" width="100" height="20" uuid="d988d8c8-0a5a-4312-92c3-3c459a2bd6bf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="465" y="0" width="100" height="20" uuid="cd1a92f3-7a1b-424a-aa8c-a42ec04353f7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="375" y="0" width="90" height="20" uuid="0232c86b-e215-4bc2-956c-eb4344da49fe"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="310" y="0" width="65" height="20" uuid="37344b40-ba3b-44f6-aeeb-584717b4d1f4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="241" y="0" width="69" height="20" uuid="495e4fc4-0451-4fbf-aeff-d8b31fa40fe4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="187" y="0" width="54" height="20" uuid="8949e0d1-9011-46d2-911f-ededf3bbe0b6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="56" y="0" width="131" height="20" uuid="fcb3b846-2cb5-4c22-b22e-3a452425660d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="21" y="0" width="35" height="20" uuid="987ea582-bbae-46ca-a8ee-3d3c9f1fd786"/>
+			</rectangle>
+			<textField>
+				<reportElement x="21" y="0" width="35" height="20" uuid="8309a394-c018-4b0a-a98a-238889a641dd"/>
+				<textFieldExpression><![CDATA[$F{kandang_sari_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="56" y="0" width="131" height="20" uuid="9b0b936e-660e-48e8-8d10-e99a8d7c052e"/>
+				<textFieldExpression><![CDATA[$F{kandang_sari_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="0" width="54" height="20" uuid="11ee9913-0567-4356-af47-f658d102b6ba"/>
+				<textFieldExpression><![CDATA[$F{kandang_sari_rt_rw}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="0" width="69" height="20" uuid="67bad12b-4fe4-4134-87bb-92fdf51f6429"/>
+				<textFieldExpression><![CDATA[$F{kandang_sari_status_pendidikan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="312" y="0" width="63" height="20" uuid="3dbffce7-17ae-4d32-a1dc-da0a8ca8513a"/>
+				<textFieldExpression><![CDATA[$F{kandang_sari_tahun_lulus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="375" y="0" width="90" height="20" uuid="0bf017d4-5d93-4497-a3d4-90694327e3c9"/>
+				<textFieldExpression><![CDATA[$F{kandang_sari_pekerjaan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="0" width="100" height="20" uuid="7c76d991-4c49-4e89-a06e-0da76f74d77a"/>
+				<textFieldExpression><![CDATA[$F{kandang_sari_nama_lembaga_pendidikan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="565" y="0" width="100" height="20" uuid="3243ec83-43a0-4641-8d9c-656c41f7314d"/>
+				<textFieldExpression><![CDATA[$F{kandang_sari_jurusan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="665" y="0" width="111" height="20" uuid="37086123-1dce-44e0-8f62-d8ed9962cbab"/>
+				<textFieldExpression><![CDATA[$F{kandang_sari_telepon}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

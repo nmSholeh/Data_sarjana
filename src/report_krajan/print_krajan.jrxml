@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4b54736a-bc1b-4fc2-a754-1e0baec1f973">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     krajan.`no` AS krajan_no,
+     krajan.`nama` AS krajan_nama,
+     krajan.`rt_rw` AS krajan_rt_rw,
+     krajan.`status_pendidikan` AS krajan_status_pendidikan,
+     krajan.`tahun_lulus` AS krajan_tahun_lulus,
+     krajan.`pekerjaan` AS krajan_pekerjaan,
+     krajan.`nama_lembaga_pendidikan` AS krajan_nama_lembaga_pendidikan,
+     krajan.`jurusan` AS krajan_jurusan,
+     krajan.`telepon` AS krajan_telepon
+FROM
+     `krajan` krajan]]>
+	</queryString>
+	<field name="krajan_no" class="java.lang.Integer"/>
+	<field name="krajan_nama" class="java.lang.String"/>
+	<field name="krajan_rt_rw" class="java.lang.String"/>
+	<field name="krajan_status_pendidikan" class="java.lang.String"/>
+	<field name="krajan_tahun_lulus" class="java.lang.Integer"/>
+	<field name="krajan_pekerjaan" class="java.lang.String"/>
+	<field name="krajan_nama_lembaga_pendidikan" class="java.lang.String"/>
+	<field name="krajan_jurusan" class="java.lang.Integer"/>
+	<field name="krajan_telepon" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="162" y="0" width="454" height="31" uuid="5cb01373-8a19-46dd-a5f8-fc7c5643bdff"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[DATA SARJANA DAN CALON SARJANA ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="208" y="0" width="375" height="21" uuid="fc148f4c-0a1d-4826-a51a-03711c4639d8"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dusun Krajan, Desa Capang - Purwodadi]]></text>
+			</staticText>
+			<line>
+				<reportElement x="43" y="20" width="717" height="1" uuid="5716a341-41d3-4077-a2e9-1b6541133ffe"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<rectangle>
+				<reportElement x="666" y="15" width="100" height="20" uuid="0157438b-6b31-40a3-b596-1382f01758ad"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="566" y="15" width="100" height="20" uuid="7d3b06d5-6f94-4826-99ec-6b5fa8b4831b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="466" y="15" width="100" height="20" uuid="8e854851-7b67-4b5c-87f8-9a17d5a6b2d5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="376" y="15" width="90" height="20" uuid="02c42575-6707-4ed4-8ae8-ae76d65c0b45"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="311" y="15" width="65" height="20" uuid="781668a8-9c72-4073-a6ef-f021d3a93e0b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="242" y="15" width="69" height="20" uuid="2a739ffd-16f3-4731-83d6-e7369c2f9dfa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="188" y="15" width="54" height="20" uuid="7dc347d2-ef39-46cd-8a5d-1f9f2f5c8d5c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="57" y="15" width="131" height="20" uuid="44f921ae-1d87-4c4e-a04c-f0e78f6e820c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="22" y="15" width="35" height="20" uuid="15a8e22f-d9a6-49db-810a-6f05ed51625b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="22" y="15" width="35" height="20" uuid="bf0ae006-42cf-43a2-a95e-5d5aac30833e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="15" width="131" height="20" uuid="c84622e6-0b3d-4243-b899-1ec253f969cd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="15" width="54" height="20" uuid="38a0b066-813f-47a4-ab03-b03167c10699"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[RT/RW]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="242" y="15" width="69" height="20" uuid="20a3a63f-00a8-48cf-ac99-a61375d6c26b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status Pendidikan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="15" width="65" height="20" uuid="d2d64b6d-44b1-4148-b400-9465dabb765d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tahun Lulus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="376" y="15" width="90" height="20" uuid="ffc18e6a-7950-42fd-a278-5973a1a28a65"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pekerjaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="466" y="15" width="100" height="20" uuid="fbd824bc-75c1-4551-937f-f4a888c032c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Lembaga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="566" y="15" width="100" height="20" uuid="ebf89ebd-1be2-4a95-8059-92104889515e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jurusan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="666" y="15" width="100" height="20" uuid="2d476e8b-1096-434c-aea2-426dd66d2aa2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telepon]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="666" y="0" width="100" height="20" uuid="3567d70d-eaab-4e65-87d8-f689c9f2d75a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="566" y="0" width="100" height="20" uuid="54dd469c-c8dd-4bcb-814d-0b3c59437803"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="466" y="0" width="100" height="20" uuid="10a6002d-8ad1-4394-9fa0-eb315dd81c19"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="376" y="0" width="90" height="20" uuid="b8f1c20f-9ca9-444c-8927-c6fea87154cf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="311" y="0" width="65" height="20" uuid="da73c647-6d2b-4478-8e4a-1ac2edef4b2b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="242" y="0" width="69" height="20" uuid="77fb6f27-bb06-4b7a-a8b3-213e458210fd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="188" y="0" width="54" height="20" uuid="095d645c-f94b-4ad5-b142-be07cd2daedb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="57" y="0" width="131" height="20" uuid="2fec7c54-0b4c-4cfa-bb5d-58bb0f678f46"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="22" y="0" width="35" height="20" uuid="3dcfc079-4ef4-4aac-8e3e-70c39ac3c77a"/>
+			</rectangle>
+			<textField>
+				<reportElement x="22" y="0" width="35" height="20" uuid="2402965c-dccd-4cb5-9ab8-665606f3b471"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{krajan_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="0" width="126" height="20" uuid="7089fbf2-b477-418c-84f5-2cd7c7dce05a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{krajan_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="0" width="54" height="20" uuid="5fdf5353-8f85-4d56-8f76-f58df1c13350"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{krajan_rt_rw}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="242" y="0" width="69" height="20" uuid="145ec917-b5f7-45a6-8955-c976e7b33166"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{krajan_status_pendidikan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="311" y="0" width="65" height="20" uuid="df951415-829e-42ce-a003-53a9171916db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{krajan_tahun_lulus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="376" y="0" width="90" height="20" uuid="e5151042-0c11-4198-9733-859141d0aefe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{krajan_pekerjaan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="466" y="0" width="100" height="20" uuid="e5bc4af8-3b12-431e-90d0-895df95a194d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{krajan_nama_lembaga_pendidikan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="566" y="0" width="100" height="20" uuid="2e93d23e-c5cf-4a2d-9dd8-76015862be44"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{krajan_jurusan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="666" y="0" width="100" height="20" uuid="2f57fc4f-b507-4dd6-9630-fbecb4656e1d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{krajan_telepon}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
