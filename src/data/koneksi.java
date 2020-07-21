@@ -19,16 +19,24 @@ import java.sql.SQLException;
 public class koneksi {
  private static Connection koneksi;
  
-public static Connection GetConnection() throws SQLException{
-    if (koneksi==null){
-        new Driver();
-        koneksi=DriverManager.getConnection
-                ("jdbc:mysql://localhost:3306/sarjana","root","");
-    }
-    return koneksi;
-    }    
-
-    Connection getConnection() {
-        throw new UnsupportedOperationException("Not supported yet.");   
+public static Connection GetConnection() throws SQLException
+ {
+        Connection con = null;
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/sarjana","root","");
+            return con;
+        }
+        catch (SQLException se)
+        {
+            System.out.println("No Connection Open");
+            return null;
+        }
+        catch (Exception ex)
+        {
+            System.out.println("Couldn't open connection"+ex);
+            return null;
+        }    
 }
 }
